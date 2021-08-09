@@ -1,0 +1,35 @@
+.card {
+  background-size: cover;
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  margin: 4px 4px;
+  background-color: #fff;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #231942;
+  color: #fff;
+  opacity: 0;
+  transition: 0.2s ease-in;
+}
+
+.card:nth-child(1) {
+  background-image: url(/images/project1.png);
+}
+
+.card:nth-child(2) {
+  background-image: url(/images/project2.png);
+}
+.card:nth-child(3) {
+  background-image: url(/images/project3.png);
+}
