@@ -59,9 +59,14 @@
 }
 
 .overlay {
+  font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -73,8 +78,20 @@
   background-color: #231942;
   color: #fff;
   opacity: 0;
-  -webkit-transition: 0.2s ease-in;
-  transition: 0.2s ease-in;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.overlay .btn {
+  background-color: #231942;
+  border: 2.5px solid #615cff;
+  margin-top: 12px;
+}
+
+.overlay .btn:hover {
+  cursor: pointer;
+  background-color: #615cff;
+  color: #f8f9fa;
 }
 
 .card:nth-child(1) {
