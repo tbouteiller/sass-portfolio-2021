@@ -1,0 +1,21 @@
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  padding: 1rem 4rem;
+  background-color: $color-primary;
+  backface-visibility: hidden;
+  border-bottom: 1px solid $color-primary;
+  z-index: 1;
+
+  a {
+    padding: 0.7rem 2rem;
+    display: block;
+    text-align: center;
+    align-content: flex-end;
+    font-weight: 500;
+  }
+}
