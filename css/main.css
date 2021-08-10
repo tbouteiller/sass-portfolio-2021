@@ -228,7 +228,7 @@ a {
 }
 
 .intro p {
-  padding-top: 20px;
+  padding-top: 25px;
   font-size: 1.2rem;
 }
 
@@ -312,6 +312,56 @@ a {
 .projects h1 {
   font-size: 2.2rem;
   padding-bottom: 25px;
+}
+
+.projects img {
+  width: 100vw;
+  vertical-align: bottom;
+}
+
+.projects .github {
+  margin: 0 20px;
+}
+
+.projects .github-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 5px;
+}
+
+.projects .github p {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.projects .github h2 {
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+.projects .github h3 {
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.projects .github button {
+  width: 250px;
+  background-color: #fff;
+  color: #615cff;
+  border: 2.5px solid #615cff;
+}
+
+.projects .github button:hover {
+  cursor: pointer;
+  background-color: #615cff;
+  color: #fff;
 }
 
 .color-primary {
