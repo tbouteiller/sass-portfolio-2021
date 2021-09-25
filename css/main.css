@@ -120,6 +120,10 @@ a {
   color: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -241,12 +245,18 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 18px;
-  margin-bottom: 550px;
+  margin-bottom: 650px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .skills {
+    margin-bottom: 1650px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .skills {
-    margin-bottom: 1450px;
+    margin-bottom: 1700px;
   }
 }
 
@@ -269,7 +279,7 @@ a {
           backface-visibility: hidden;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
   .skills-card-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -292,7 +302,7 @@ a {
 .skills-text {
   color: #615cff;
   font-size: 20px;
-  padding: 25px 0;
+  padding: 12px 0;
 }
 
 .projects {

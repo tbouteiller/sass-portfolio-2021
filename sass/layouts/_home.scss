@@ -92,10 +92,14 @@
   display: flex;
   justify-content: center;
   font-size: 18px;
-  margin-bottom: 550px;
+  margin-bottom: 650px;
+
+  @media only screen and (max-width: 1000px) {
+    margin-bottom: 1650px;
+  }
 
   @media only screen and (max-width: 768px) {
-    margin-bottom: 1450px;
+    margin-bottom: 1700px;
   }
 
   &-card-container {
@@ -109,7 +113,7 @@
     background-color: #fff;
     backface-visibility: hidden;
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1000px) {
       flex-direction: column;
     }
   }
@@ -128,7 +132,7 @@
   &-text {
     color: $color-primary;
     font-size: 20px;
-    padding: 25px 0;
+    padding: 12px 0;
   }
 }
 
