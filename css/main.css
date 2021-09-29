@@ -15,10 +15,10 @@
   transition: top 0.3s;
   /* Transition effect when sliding down (and up) */
   padding: 1rem 4rem;
-  background-color: #615cff;
+  background-color: #615cff !important;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  border-bottom: 1px solid #615cff;
+  border-bottom: 1px solid #615cff !important;
   z-index: 1;
 }
 

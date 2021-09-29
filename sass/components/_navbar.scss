@@ -6,9 +6,9 @@
   width: 100%; /* Full width */
   transition: top 0.3s; /* Transition effect when sliding down (and up) */
   padding: 1rem 4rem;
-  background-color: $color-primary;
+  background-color: $color-primary !important;
   backface-visibility: hidden;
-  border-bottom: 1px solid $color-primary;
+  border-bottom: 1px solid $color-primary !important;
   z-index: 1;
 
   a {
