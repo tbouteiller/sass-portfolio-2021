@@ -6,14 +6,10 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
   position: fixed;
-  /* Make it stick/fixed */
   top: 0;
-  /* Stay on top */
   width: 100%;
-  /* Full width */
   -webkit-transition: top 0.3s;
   transition: top 0.3s;
-  /* Transition effect when sliding down (and up) */
   padding: 1rem 4rem;
   background-color: #615cff !important;
   -webkit-backface-visibility: hidden;
@@ -22,13 +18,61 @@
   z-index: 1;
 }
 
+@media only screen and (max-width: 768px) {
+  #navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 #navbar a {
-  padding: 0.7rem 2rem;
+  padding: 0.6rem 2rem;
   display: block;
   text-align: center;
   -ms-flex-line-pack: end;
       align-content: flex-end;
   font-weight: 500;
+}
+
+@media only screen and (max-width: 480px) {
+  #navbar a {
+    border: none;
+    background-color: #615cff;
+    padding: 0;
+    padding-bottom: 2px;
+  }
+}
+
+#navbar a:nth-child(1):hover,
+#navbar a:nth-child(2):hover {
+  color: #f8f9fa;
+}
+
+@media only screen and (max-width: 480px) {
+  #navbar a:nth-child(3):hover {
+    color: #cecfcf;
+  }
 }
 
 .btn {
